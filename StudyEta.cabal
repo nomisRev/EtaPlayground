@@ -1,0 +1,25 @@
+name:                StudyEta
+version:             0.1.0.0
+license:             Apache-2.0
+license-file:        LICENSE
+author:              Simon Vergauwen
+maintainer:          vergauwen.simon@gmail.com
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+
+executable StudyEta
+  main-is:             Main.hs
+  build-depends:       base >=4.8 && <4.9
+                     , servant-server == 0.14.1
+                     , aeson == 1.2.3.0
+                     , wai-servlet-handler-jetty == 0.1.2.0
+
+  default-language:    Haskell2010
+  
+  --This is where you power up your compiler :D
+  default-extensions:  OverloadedStrings
+                       DataKinds
+                       TypeOperators
+                       FlexibleContexts
